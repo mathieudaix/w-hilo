@@ -1,0 +1,9 @@
+$space: 1rem;
+@function space($value) {
+	@return $value * $space;
+}
+
+$font: 1rem;
+@function font($value) {
+	@return $value * $font;
+}
