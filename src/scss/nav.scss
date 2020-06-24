@@ -1,6 +1,7 @@
 .nav {
 	position: relative;
-	background: $color-gray-01;
+	background: $color-white;
+	box-shadow: $shadow;
 	&__container {
 		padding: space(1);
 		display: flex;
@@ -11,7 +12,7 @@
 		position: relative;
 		z-index: 1;
 		img {
-			width: 8rem;
+			width: 4rem;
 		}
 	}
 	&__icon {
@@ -28,6 +29,7 @@
 			width: 100%;
 			height: 2px;
 			background: $color-dark;
+			border-radius: 1rem;
 			&:last-of-type {
 				margin-top: space(0.3);
 			}
@@ -39,7 +41,7 @@
 		position: absolute;
 		top: 0;
 		left: 0;
-		background: $color-gray-02;
+		background: $color-light;
 		padding: space(5) space(1);
 		display: flex;
 		flex-direction: column;
@@ -60,15 +62,16 @@
 			input {
 				width: 100%;
 				background: $color-white;
-				padding: space(1);
-				border: 1px solid $color-dark;
+				padding: space(1) space(1) space(1) space(3);
+				box-shadow: $shadow;
+				border-radius: 1rem;
 			}
 			svg {
 				width: 1.5rem;
 				height: 1.5rem;
 				position: absolute;
 				top: 50%;
-				right: 1rem;
+				left: 1rem;
 				transform: translateY(-50%);
 				cursor: pointer;
 			}

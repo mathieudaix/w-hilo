@@ -1,7 +1,3 @@
-$color-dark: #111;
-$color-gray-01: #eee;
-$color-gray-02: #ddd;
-
 $color-white: #fff;
 $color-light: #f7faff;
 $color-dark: #16005f;
@@ -9,4 +5,4 @@ $color-blue: #ccfaff;
 $color-pink: #fae8ff;
 $color-green: #17e8c3;
 
-$shadow: -6px 6px 18px #fff;
+$shadow: -6px 6px 18px rgba($color-dark, 0.2);
