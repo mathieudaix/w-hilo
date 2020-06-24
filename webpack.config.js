@@ -4,7 +4,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CopyPlugin = require('copy-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
-let isDev = (process.env.NODE_ENV === 'development')
+let isDev = Boolean(process.env.WEBPACK_DEV_SERVER)
 
 module.exports = {
 	entry: './src/javascript/index.js',
@@ -103,6 +103,20 @@ module.exports = {
 			return new HtmlWebpackPlugin({
 				template: `./src/dashboard/${el}.ejs`,
 				filename: `dashboard/${el}.html`,
+				minify: isDev ? false : {
+					collapseWhitespace: true,
+					removeComments: true,
+					removeRedundantAttributes: true,
+					removeScriptTypeAttributes: true,
+					removeStyleLinkTypeAttributes: true,
+					useShortDoctype: true
+				}
+			})
+		}),
+		...['connexion'].map(el => {
+			return new HtmlWebpackPlugin({
+				template: `./src/auth/${el}.ejs`,
+				filename: `auth/${el}.html`,
 				minify: isDev ? false : {
 					collapseWhitespace: true,
 					removeComments: true,

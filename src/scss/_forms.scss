@@ -1,15 +1,19 @@
-.search {
+.search,
+.page-auth {
 	position: relative;
+
 	input {
 		width: 100%;
 		background: $color-white;
 		padding: space(0.75) space(0.75) space(0.75) space(3);
 		box-shadow: $shadow;
 		border-radius: 0.5rem;
+
 		&::placeholder {
 			color: $color-gray;
 		}
 	}
+
 	img {
 		width: 1.25rem;
 		height: 1.25rem;
@@ -18,5 +22,77 @@
 		left: 1rem;
 		transform: translateY(-50%);
 		cursor: pointer;
+	}
+}
+
+.page-auth {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+
+	:not(label) {
+		text-align: center;
+	}
+
+	>section {
+		height: inherit;
+		justify-content: center;
+	}
+
+	>section,
+	>section form {
+		display: flex;
+		flex-direction: column;
+	}
+
+	input,
+	label {
+		max-width: 320px;
+		margin: 0 auto;
+	}
+
+	label {
+		width: 320px;
+		text-align: left;
+		margin-top: 1rem;
+		margin-bottom: .5rem;
+		overflow: hidden;
+	}
+
+	.btn {
+		&-connexion {
+			color: #17E8C3;
+			border: 2px solid;
+		}
+
+		&-google {
+			color: #E2605B;
+			border: 2px solid;
+		}
+	}
+
+	#forgot-pass {
+		color: #A5A1B5;
+		margin-top: 1.5em;
+		margin-bottom: 2.25em;
+	}
+
+	.titre {
+		font-weight: bold;
+		font-size: 2em;
+		margin-bottom: 1em;
+	}
+
+	.inscr {
+		margin-top: 1.4em;
+		text-decoration: underline;
+	}
+
+	.buttons-container {
+		display: grid;
+		grid-template-columns: repeat(2, 150px);
+		gap: 20px;
+		max-width: 320px;
+		margin: 0 auto;
 	}
 }
