@@ -1,0 +1,36 @@
+.pagination {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	margin-top: space(2);
+	img {
+		width: 1.25rem;
+		height: 1.25rem;
+		cursor: pointer;
+		&.pagination__left {
+			transform: rotate(90deg);
+		}
+		&.pagination__right {
+			transform: rotate(-90deg);
+		}
+	}
+	p {
+		margin: 0 space(1);
+		cursor: pointer;
+		&.active {
+			position: relative;
+			&::before {
+				content: "";
+				display: block;
+				width: 0.4rem;
+				height: 0.4rem;
+				background: $color-blue;
+				border-radius: 50%;
+				position: absolute;
+				bottom: -0.75rem;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+		}
+	}
+}

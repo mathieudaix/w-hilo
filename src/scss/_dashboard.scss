@@ -64,3 +64,122 @@
 		}
 	}
 }
+
+.activity {
+	padding: 0 0 space(4);
+	&__title {
+		@media screen and (min-width: $from-medium) {
+			display: flex;
+			align-items: flex-end;
+			justify-content: space-between;
+		}
+		&__left {
+			@media screen and (min-width: $from-medium) {
+				display: flex;
+				align-items: center;
+			}
+		}
+		p {
+			font-family: $font-bold;
+			margin-bottom: space(1);
+			@media screen and (min-width: $from-medium) {
+				margin-bottom: 0;
+				margin-right: space(2);
+			}
+		}
+		.search {
+			input {
+				@media screen and (min-width: $from-medium) {
+					width: 20rem;
+				}
+			}
+		}
+		label {
+			font-size: font(0.8);
+			display: block;
+			margin: space(2) 0 space(0.5);
+			@media screen and (min-width: $from-medium) {
+				margin-top: 0;
+			}
+		}
+		select {
+			width: 100%;
+			background: $color-white;
+			padding: space(0.75);
+			box-shadow: $shadow;
+			border-radius: 0.5rem;
+			appearance: auto;
+		}
+	}
+	table {
+		width: 100%;
+		border-collapse: collapse;
+		margin-top: space(2);
+	}
+	table,
+	thead,
+	tbody,
+	th,
+	td,
+	tr {
+		@media screen and(max-width: $to-medium) {
+			display: block;
+		}
+	}
+	thead {
+		tr {
+			@media screen and(max-width: $to-medium) {
+				display: none;
+			}
+		}
+		th {
+			font-family: $font-bold;
+			font-size: font(0.8);
+			padding: space(1);
+		}
+	}
+	tbody {
+		background: $color-white;
+		border-radius: 0.5rem;
+		box-shadow: $shadow;
+		@media screen and(max-width: $to-medium) {
+			padding: space(1);
+		}
+		tr {
+			&:not(:last-of-type) {
+				border-bottom: 1px solid $color-gray;
+			}
+		}
+		td {
+			padding: space(1);
+			vertical-align: middle;
+			@media screen and(max-width: $to-medium) {
+				position: relative;
+				padding: space(1) 0 space(1) 50%;
+				&::before {
+					content: attr(data-column);
+					position: absolute;
+					top: 1rem;
+					left: 1rem;
+					width: 45%;
+					font-family: $font-bold;
+					font-size: font(0.8);
+				}
+			}
+			.activity__data__rows__end {
+				display: inline-block;
+				padding: space(0.75);
+				background: $color-blue;
+				border-radius: 0.5rem;
+				box-shadow: $shadow;
+			}
+			.activity__data__rows__wait {
+				display: inline-block;
+				padding: space(0.75);
+				background: $color-pink;
+				border-radius: 0.5rem;
+				box-shadow: $shadow;
+			}
+		}
+	}
+}
