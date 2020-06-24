@@ -1,12 +1,40 @@
 $color-white: #fff;
 $color-light: #f7faff;
 $color-dark: #16005f;
+$color-gray: #a5a1b5;
 $color-blue: #ccfaff;
 $color-pink: #fae8ff;
 $color-green: #17e8c3;
 
-$shadow: -6px 6px 18px rgba($color-dark, 0.2);
+$shadow: 0 0 20px rgba($color-dark, 0.15);
 
 $font-light: "octarine-light", sans-serif;
 $font-bold: "octarine-bold", sans-serif;
 $font-text: "nimbus-sans", sans-serif;
+
+$from-tiny: 500px;
+$to-tiny: $from-tiny - 1;
+
+$from-small: 700px;
+$to-small: $from-small - 1;
+
+$from-medium: 1000px;
+$to-medium: $from-medium - 1;
+
+$from-large: 1200px;
+$to-large: $from-large - 1;
+
+$from-big: 1400px;
+$to-big: $from-big - 1;
+
+$from-huge: 1600px;
+$to-huge: $from-huge - 1;
+
+$from-enormous: 1800px;
+$to-enormous: $from-enormous - 1;
+
+$from-gigantic: 2000px;
+$to-gigantic: $from-gigantic - 1;
+
+$from-colossal: 2400px;
+$to-colossal: $from-colossal - 1;
