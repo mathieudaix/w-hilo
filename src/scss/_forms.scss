@@ -35,13 +35,13 @@
 		text-align: center;
 	}
 
-	>section {
+	> section {
 		height: inherit;
 		justify-content: center;
 	}
 
-	>section,
-	>section form {
+	> section,
+	> section form {
 		display: flex;
 		flex-direction: column;
 	}
@@ -56,24 +56,24 @@
 		width: 320px;
 		text-align: left;
 		margin-top: 1rem;
-		margin-bottom: .5rem;
+		margin-bottom: 0.5rem;
 		overflow: hidden;
 	}
 
 	.btn {
 		&-connexion {
-			color: #17E8C3;
+			color: #17e8c3;
 			border: 2px solid;
 		}
 
 		&-google {
-			color: #E2605B;
+			color: #e2605b;
 			border: 2px solid;
 		}
 	}
 
 	#forgot-pass {
-		color: #A5A1B5;
+		color: #a5a1b5;
 		margin-top: 1.5em;
 		margin-bottom: 2.25em;
 	}
@@ -95,5 +95,25 @@
 		gap: 20px;
 		max-width: 320px;
 		margin: 0 auto;
+	}
+}
+
+.filtre__label {
+	font-size: font(0.8);
+	display: block;
+	margin: space(2) 0 space(0.5);
+	@media screen and (min-width: $from-medium) {
+		margin-top: 0;
+	}
+}
+.filtre__select {
+	width: 100%;
+	background: $color-white;
+	padding: space(0.75);
+	box-shadow: $shadow;
+	border-radius: 0.5rem;
+	appearance: auto;
+	@media screen and (min-width: $from-medium) {
+		width: 16rem;
 	}
 }

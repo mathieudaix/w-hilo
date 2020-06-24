@@ -94,22 +94,6 @@
 				}
 			}
 		}
-		label {
-			font-size: font(0.8);
-			display: block;
-			margin: space(2) 0 space(0.5);
-			@media screen and (min-width: $from-medium) {
-				margin-top: 0;
-			}
-		}
-		select {
-			width: 100%;
-			background: $color-white;
-			padding: space(0.75);
-			box-shadow: $shadow;
-			border-radius: 0.5rem;
-			appearance: auto;
-		}
 	}
 	table {
 		width: 100%;
