@@ -1,0 +1,97 @@
+.nav {
+	position: relative;
+	background: $color-gray-01;
+	&__container {
+		padding: space(1);
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__logo {
+		position: relative;
+		z-index: 1;
+		img {
+			width: 8rem;
+		}
+	}
+	&__icon {
+		width: 2.4rem;
+		height: 2rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		cursor: pointer;
+		position: relative;
+		z-index: 1;
+		span {
+			display: block;
+			width: 100%;
+			height: 2px;
+			background: $color-dark;
+			&:last-of-type {
+				margin-top: space(0.3);
+			}
+		}
+	}
+	&__menu {
+		width: 100%;
+		height: 100vh;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: $color-gray-02;
+		padding: space(5) space(1);
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		// opacity: 0;
+		// visibility: hidden;
+		ul {
+			order: 2;
+			li {
+				font-size: font(1.5);
+				margin-top: space(1);
+			}
+		}
+		&__search {
+			width: 100%;
+			position: relative;
+			order: 1;
+			input {
+				width: 100%;
+				background: $color-white;
+				padding: space(1);
+				border: 1px solid $color-dark;
+			}
+			svg {
+				width: 1.5rem;
+				height: 1.5rem;
+				position: absolute;
+				top: 50%;
+				right: 1rem;
+				transform: translateY(-50%);
+				cursor: pointer;
+			}
+		}
+	}
+	&__btn {
+		display: none;
+	}
+	&__profil {
+		display: flex;
+		order: 3;
+		display: flex;
+		align-items: center;
+		margin-top: space(2);
+		div {
+			width: 2rem;
+			height: 2rem;
+			border-radius: 50%;
+			background: $color-dark;
+			margin-right: space(1);
+		}
+		p {
+			font-size: font(1.5);
+		}
+	}
+}

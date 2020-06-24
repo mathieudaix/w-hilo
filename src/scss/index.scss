@@ -1,12 +1,21 @@
-@import "./vendors/destyle", "./vendors/family";
+@import "reset";
 
-@import "./settings/variables", "./settings/mixins", "./settings/functions";
+@import "variables";
+@import "functions";
 
-@import "./elements/fonts", "./elements/pages";
+@import "nav";
 
-@import "./layouts/container", "./layouts/navigation", "./layouts/header", "./layouts/footer", "./layouts/form";
+html {
+	font-size: 16px;
+}
 
-@import "./components/loader", "./components/cursor", "./components/scroll", "./components/typographies",
-	"./components/buttons", "./components/dropdowns", "./components/sliders", "./components/animations";
+body {
+	width: 100vw;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+		"Helvetica Neue", sans-serif;
+}
 
-@import "./pages/home";
+.container-full {
+	width: 100%;
+	padding: 0 space(2);
+}
