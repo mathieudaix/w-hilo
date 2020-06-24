@@ -30,7 +30,8 @@
 	display: flex;
 	flex-direction: column;
 
-	:not(label) {
+	h1,
+	a {
 		text-align: center;
 	}
 
