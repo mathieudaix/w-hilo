@@ -1,0 +1,66 @@
+.news {
+	padding: space(4) 0;
+	&__container {
+		@media screen and (min-width: $from-medium) {
+			display: flex;
+			align-items: flex-start;
+			justify-content: space-between;
+		}
+	}
+	&__card {
+		background: $color-white;
+		box-shadow: $shadow;
+		border-radius: 0.5rem;
+		padding: space(2);
+		@media screen and (min-width: $from-medium) {
+			width: 49%;
+		}
+		&:not(:last-of-type) {
+			margin-bottom: space(2);
+			@media screen and (min-width: $from-medium) {
+				margin-bottom: 0;
+			}
+		}
+		&__title {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			cursor: pointer;
+			p {
+				font-family: $font-bold;
+				font-size: font(1.2);
+			}
+			img {
+				width: 1.5rem;
+				height: 1.5rem;
+			}
+		}
+		&__content {
+			overflow: hidden;
+			span {
+				display: block;
+				padding-top: space(2);
+			}
+		}
+		&__message {
+			.news__card__content {
+				a {
+					&:first-of-type {
+						margin-right: space(2);
+					}
+					&:last-of-type {
+						margin-top: space(1);
+						@media screen and (min-width: $from-small) {
+							margin-top: 0;
+						}
+					}
+				}
+			}
+		}
+		&.close {
+			.news__card__content {
+				height: 0;
+			}
+		}
+	}
+}

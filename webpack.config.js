@@ -99,10 +99,10 @@ module.exports = {
 				useShortDoctype: true
 			}
 		}),
-		...[].map(el => {
+		...['index'].map(el => {
 			return new HtmlWebpackPlugin({
-				template: `./src/${el}.ejs`,
-				filename: `${el}.html`,
+				template: `./src/dashboard/${el}.ejs`,
+				filename: `dashboard/${el}.html`,
 				minify: isDev ? false : {
 					collapseWhitespace: true,
 					removeComments: true,

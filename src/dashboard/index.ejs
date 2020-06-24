@@ -1,0 +1,72 @@
+<%= require('../includes/header.ejs')({
+    title: 'Tableau de bord',
+    page: 'page-dashboard',
+    description: 'Tableau de bord.'
+}) %>
+
+<section class="news">
+	<div class="container news__container">
+
+		<div class="news__card news__card__message">
+			<div class="news__card__title">
+				<p>La messagerie</p>
+				<picture>
+					<img src="/images/icon-chevron.svg" alt="">
+				</picture>
+			</div>
+			<div class="news__card__content">
+				<span></span>
+				<a class="btn btn--green btn--icon" href="#">
+					Nouveau message
+					<picture>
+						<img src="/images/icon-more.svg" alt="">
+					</picture>
+				</a>
+				<a class="btn btn--dark" href="#">Messagerie</a>
+			</div>
+		</div>
+
+		<div class="news__card news__card__candidature">
+			<div class="news__card__title">
+				<p>Les candidatures</p>
+				<picture>
+					<img src="/images/icon-chevron.svg" alt="">
+				</picture>
+			</div>
+			<div class="news__card__content">
+				<span></span>
+				<a href="#">42 candidatures en attente de validation.</a>
+			</div>
+		</div>
+
+	</div>
+</section>
+
+<section class="activity">
+	<div class="container activity__container">
+
+		<div class="activity__title">
+			<div>
+				<p>Dernières activitées</p>
+				<div class="nav__menu__info__search search">
+					<input type="text" placeholder="Rechercher dans le tableau">
+					<picture>
+						<img src="/images/icon-search.svg" alt="">
+					</picture>
+				</div>
+			</div>
+			<div>
+				<label for="filtre">Filtrer</label>
+				<select class="select">
+					<option value="choix" disabled selected>Choisir un filtre</option>
+					<option value="0">0</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+				</select>
+			</div>
+		</div>
+
+	</div>
+</section>
+
+<%= require('../includes/footer.ejs')() %>
