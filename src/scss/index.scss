@@ -13,50 +13,47 @@
 
 @import "dashboard";
 @import "choice";
-
-
-
-
+@import "home";
 
 .page-projet {
 	height: 100vh;
 	display: flex;
-    flex-direction: column;
-    >section {
-        height: inherit;
-        display: flex;
-        flex-wrap: wrap;
-        place-content: center;
+	flex-direction: column;
+	> section {
+		height: inherit;
+		display: flex;
+		flex-wrap: wrap;
+		place-content: center;
 
-        h1 {
-            display: block;
-            margin-bottom: 4rem;
-            font-size: 2rem;
-        }
+		h1 {
+			display: block;
+			margin-bottom: 4rem;
+			font-size: 2rem;
+		}
 
-        h2 {
-            display: block;
-            margin-bottom: 10px;
-            font-size: 1.2rem;
-        }
+		h2 {
+			display: block;
+			margin-bottom: 10px;
+			font-size: 1.2rem;
+		}
 
-        .toggleables {
-            list-style-type: none;
-            display: flex;
-            font-weight: bold;
-            :first-child {
-                margin-right: 2rem;
-                text-decoration: underline;
-            }
-        }
-    }
+		.toggleables {
+			list-style-type: none;
+			display: flex;
+			font-weight: bold;
+			:first-child {
+				margin-right: 2rem;
+				text-decoration: underline;
+			}
+		}
+	}
 
-    .pre-toggleables {
-        display: flex;
-        flex-direction: column;
-        width: 90%;
-        margin-bottom: 40px;
-    }
+	.pre-toggleables {
+		display: flex;
+		flex-direction: column;
+		width: 90%;
+		margin-bottom: 40px;
+	}
 
 	.cards-container {
 		width: 90%;
@@ -72,7 +69,7 @@
 			gap: 20px;
 			margin-bottom: 30px;
 
-			>section {
+			> section {
 				height: 100%;
 			}
 		}

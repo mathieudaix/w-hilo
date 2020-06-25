@@ -94,6 +94,13 @@
 				}
 			}
 		}
+		&__btns {
+			a {
+				&:first-of-type {
+					margin-right: space(1);
+				}
+			}
+		}
 		&__info {
 			@media screen and (min-width: $from-medium) {
 				display: flex;
