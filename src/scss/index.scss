@@ -16,11 +16,12 @@
 @import "home";
 
 .page-projet {
-	height: 100vh;
+	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 
 	>section {
+		padding-top: 40px;
 		height: inherit;
 		display: flex;
 		flex-wrap: wrap;
@@ -101,6 +102,15 @@
 			display: flex;
 			flex-wrap: wrap;
 			place-content: center;
+
+			&.canvas {
+				padding: 0
+			}
+
+			.modele__right {
+				margin: 0;
+				height: 100%;
+			}
 		}
 
 		.disabled-card {
@@ -118,6 +128,11 @@
 		.btn-wait {
 			border: none;
 			background: #FAE8FF;
+		}
+
+		.btn-ok {
+			border: none;
+			background: #CCFAFF;
 		}
 
 		.info-icon {
@@ -148,7 +163,8 @@
 				display: table;
 			}
 
-			th, td {
+			th,
+			td {
 				width: 100px;
 			}
 
@@ -159,6 +175,16 @@
 
 		.info-wrapper {
 			justify-content: space-between;
+		}
+
+	}
+
+	.space-between {
+		display: flex;
+		justify-content: space-between;
+
+		.disabled {
+			display: none;
 		}
 	}
 }

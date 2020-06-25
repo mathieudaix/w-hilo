@@ -7,7 +7,7 @@
     <section class="pre-toggleables">
         <div class="space-between">
             <h1>Nom du projet</h1>
-            <button class="btn disabled">Messagerie</button>
+            <button class="btn">Messagerie</button>
         </div>
 
         <section class="toggleables">
@@ -30,7 +30,7 @@
                         <tr>
                             <td>12/12/12</td>
                             <td>dsfjk/</td>
-                            <td class="btn btn-wait">En attente</td>
+                            <td class="btn btn-ok">Document déposé</td>
                             <td>OK</td>
                         </tr>
                     </table>
@@ -77,8 +77,30 @@
                 <div class="btn">Demande d'informations supplémentaires</div>
             </section>
         </section>
-        <section class="news__card aside">
-            <i>Pas d'infographiste attribué.</i>
+        <section class="news__card aside canvas">
+		<div class="modele__right">
+			<span class="drag-notice" id="js-drag-notice">Drag to rotate 360&#176;</span>
+			<div id="options">
+				<div class="option --is-active" data-option="base">
+					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1376484/base.svg" alt="" />
+				</div>
+				<div class="option" data-option="back">
+					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1376484/back.svg" alt="" />
+				</div>
+			</div>
+			<canvas id="model"></canvas>
+			<div class="controls">
+				<!-- <div class="info"> -->
+				<!-- <div class="info__message"> -->
+				<!-- <p><strong>&nbsp;Grab&nbsp;</strong> to rotate chair. <strong>&nbsp;Scroll&nbsp;</strong> to -->
+				<!-- zoom.</p> -->
+				<!-- </div> -->
+				<!-- </div> -->
+				<div id="js-tray" class="tray">
+					<div id="js-tray-slide" class="tray__slide"></div>
+				</div>
+			</div>
+		</div>
         </section>
     </section>
 </section>
