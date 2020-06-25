@@ -27,6 +27,11 @@
 		background: $color-violet;
 		color: $color-white;
 	}
+	&--full--green {
+		background: $color-green;
+		color: $color-white !important;
+		border: none !important;
+	}
 	&--full--white {
 		background: $color-white;
 		border: 2px solid $color-dark;
