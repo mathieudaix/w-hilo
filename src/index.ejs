@@ -1,9 +1,333 @@
-<%= require('./includes/header.ejs')({
+<%= require('./includes/header-front.ejs')({
     title: 'Home',
     page: 'page-home',
     description: 'Home.'
 }) %>
 
+<header class="hero">
+	<div class="container hero__container">
+		<h1>Pelpim, la modélisation sans pépin</h1>
+		<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+		<div>
+			<a class="btn btn--full--orange" href="#">Commander un modèle 3D</a>
+			<a class="btn btn--dark" href="#">Comment ça marche ?</a>
+		</div>
+	</div>
+</header>
 
+<section class="relation">
+	<div class="container relation__container">
+		<div>
+			<h2>Mise en relation avec des infographistes 3D validés par notre équipe</h2>
+			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem optio magni commodi et repellendus
+				distinctio dolor iste dolore voluptatum blanditiis, fugit provident inventore cum ipsam, voluptas porro
+				ratione vitae repellat.</p>
+			<a class="btn btn--full--white" href="#">Déposer un projet</a>
+		</div>
+		<div class="relation__right">
+			<picture>
+				<img src="/images/illu-relation.png" alt="">
+			</picture>
+		</div>
+	</div>
+</section>
+
+<section class="stockage">
+	<div class="container stockage__container">
+		<h2>Stockage illimité de vos modèles</h2>
+		<a class="btn btn--full--violet" href="#">Créer mon catalogue</a>
+	</div>
+</section>
+
+<section class="trio">
+	<div class="container trio__container">
+		<div>
+			<h2>Catalogue de milliers de produits modélisés en 3D</h2>
+			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+		</div>
+		<div>
+			<h2>Une gestion simplifiée de vos modèles 3D</h2>
+			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+		</div>
+		<div>
+			<h2>Un abonnement de 240€/mois uniquement</h2>
+			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+		</div>
+	</div>
+</section>
+
+<section class="suite">
+	<div class="container suite__container">
+		<h2>Des modèles utilisables sur toute la <span>Suite AIR©</span></h2>
+		<div class="suite__cards">
+			<div>
+				<span></span>
+				<p>menuAR</p>
+			</div>
+			<div>
+				<span></span>
+				<p>showroomVR</p>
+			</div>
+			<div>
+				<span></span>
+				<p>immoAR</p>
+			</div>
+			<div>
+				<span></span>
+				<p>imaginAR</p>
+			</div>
+			<div>
+				<span></span>
+				<p>demoAR </p>
+			</div>
+			<div>
+				<span></span>
+				<p>acisbeaBLOO</p>
+			</div>
+		</div>
+		<div class="suite__btn">
+			<a class="btn btn--full--blanc" href="#">La suite AIR©</a>
+		</div>
+	</div>
+</section>
+
+<section class="modele">
+	<div class="container modele__container">
+		<div>
+			<h2>Dès modèles personnalisables grâce à une bibliothèque</h2>
+			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem optio magni commodi et repellendus
+				distinctio dolor iste dolore voluptatum blanditiis, fugit provident inventore cum ipsam, voluptas porro
+				ratione vitae repellat.</p>
+		</div>
+		<div class="modele__right">
+			<span class="drag-notice" id="js-drag-notice">Drag to rotate 360&#176;</span>
+			<div id="options">
+				<div class="option --is-active" data-option="base">
+					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1376484/base.svg" alt="" />
+				</div>
+				<div class="option" data-option="back">
+					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1376484/back.svg" alt="" />
+				</div>
+			</div>
+			<canvas id="model"></canvas>
+			<div class="controls">
+				<!-- <div class="info"> -->
+				<!-- <div class="info__message"> -->
+				<!-- <p><strong>&nbsp;Grab&nbsp;</strong> to rotate chair. <strong>&nbsp;Scroll&nbsp;</strong> to -->
+				<!-- zoom.</p> -->
+				<!-- </div> -->
+				<!-- </div> -->
+				<div id="js-tray" class="tray">
+					<div id="js-tray-slide" class="tray__slide"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="avis">
+	<div class="container avis__container">
+		<h2>Des centaines de profils d’infographistes vérifiés</h2>
+		<div class="avis__cards">
+			<div class="avis__cards__item">
+				<span></span>
+				<div>
+					<h3>Michele Dupont</h3>
+					<p>Infographiste 3D spécialisée dans les meubles de jardin</p>
+				</div>
+			</div>
+			<div class="avis__cards__item">
+				<span></span>
+				<div>
+					<h3>Michele Dupont</h3>
+					<p>Infographiste 3D spécialisée dans les meubles de jardin</p>
+				</div>
+			</div>
+			<div class="avis__cards__item">
+				<span></span>
+				<div>
+					<h3>Michele Dupont</h3>
+					<p>Infographiste 3D spécialisée dans les meubles de jardin</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="accroche">
+	<div class="container accroche__container">
+		<h2><span>Innovation</span> <span>Création</span> <span>Simplification</span><br>Pelpim pour vous servir </h2>
+	</div>
+</section>
+
+<section class="atout">
+	<div class="container atout__container">
+		<div>
+			<h2>Des atouts pour les infographistes 3D</h2>
+			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem optio magni commodi et repellendus
+				distinctio dolor iste dolore voluptatum blanditiis, fugit provident inventore cum ipsam, voluptas porro
+				ratione vitae repellat.</p>
+			<a class="btn btn--full--orange" href="#">Nous rejoindre</a>
+		</div>
+		<div class="atout__right">
+			<div>
+				<h2>Des projets attribués en fonction de vos préférences </h2>
+			</div>
+			<div>
+				<h2>Mise a disposition d’un calendrier de disponibilité</h2>
+			</div>
+			<div>
+				<h2>Des brief complets et précis à tous les coups</h2>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="trust">
+	<div class="container trust__container">
+		<h2>Ils nous font confiance</h2>
+		<div class="trust__logos">
+			<div>
+				<picture>
+					<img src="/images/logo-banque-populaire.svg" alt="">
+				</picture>
+			</div>
+			<div>
+				<picture>
+					<img src="/images/logo-institut.svg" alt="">
+				</picture>
+			</div>
+			<div>
+				<picture>
+					<img src="/images/logo-sanijura.svg" alt="">
+				</picture>
+			</div>
+			<div>
+				<picture>
+					<img src="/images/logo-adopt.svg" alt="">
+				</picture>
+			</div>
+			<div>
+				<picture>
+					<img src="/images/logo-cdiscount.svg" alt="">
+				</picture>
+			</div>
+			<div>
+				<picture>
+					<img src="/images/logo-nouvelle-aquitaine.svg" alt="">
+				</picture>
+			</div>
+			<div>
+				<picture>
+					<img src="/images/logo-carrefour.svg" alt="">
+				</picture>
+			</div>
+			<div>
+				<picture>
+					<img src="/images/logo-proloisirs.svg" alt="">
+				</picture>
+			</div>
+			<div>
+				<picture>
+					<img src="/images/logo-universite-bordeaux.svg" alt="">
+				</picture>
+			</div>
+			<div>
+				<picture>
+					<img src="/images/logo-poietis.svg" alt="">
+				</picture>
+			</div>
+		</div>
+		<div class="trust__testimonials">
+			<div>
+				<span>"</span>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae alias soluta eum voluptate.
+					Inventore pariatur quae ut commodi, illum minima ex facilis veniam saepe nemo et, voluptatem nisi
+					esse omnis!</p>
+				<h3>- Michele Dupont</h3>
+			</div>
+			<div>
+				<span>"</span>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae alias soluta eum voluptate.
+					Inventore pariatur quae ut commodi, illum minima ex facilis veniam saepe nemo et, voluptatem nisi
+					esse omnis!</p>
+				<h3>- Michele Dupont</h3>
+			</div>
+			<div>
+				<span>"</span>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae alias soluta eum voluptate.
+					Inventore pariatur quae ut commodi, illum minima ex facilis veniam saepe nemo et, voluptatem nisi
+					esse omnis!</p>
+				<h3>- Michele Dupont</h3>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section class="note">
+	<div class="container note__container">
+		<h2>4/5 sur Trust Pilot</h2>
+		<div class="note__btn">
+			<a class="btn btn btn--full--blanc" href="#">Voir les avis</a>
+		</div>
+	</div>
+</section>
+
+<section class="question">
+	<div class="container question__container">
+		<div>
+			<h2>Vous avez des questions ?</h2>
+			<a class="btn btn--full--violet" href="#">Contacter l'équipe</a>
+		</div>
+		<div class="question__right">
+			<picture>
+				<img src="/images/illu-question.png" alt="">
+			</picture>
+		</div>
+	</div>
+</section>
+
+<footer class="footer">
+	<div class="container footer__container">
+		<ul>
+			<li>Qui sommes-nous ?</p>
+			<li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+			<li><a class="btn btn--blue" href="#">Découvrir HILO</a></li>
+		</ul>
+		<ul>
+			<li>Boutique</li>
+			<li><a href="#">Commandez un modèle</a></li>
+			<li><a href="#">Rejoindre nos infographistes</a></li>
+			<li><a href="#">Connexion</a></li>
+		</ul>
+		<ul>
+			<li>Contact</li>
+			<li>5 rue de Lambour</li>
+			<li>33000 Bordeaux</li>
+			<li>06 56 85 44 52</li>
+		</ul>
+		<ul>
+			<li>Suivez notre activité</li>
+			<li>Inscrivez nous à notre newsletter</li>
+			<li>
+				<input type="text" placeholder="micheldupont@gmail.com">
+				<button class="btn btn--full--violet" type="submit">S'inscrire</button>
+			</li>
+			<li>
+				<picture>
+					<img src="/images/logo-facebook.svg" alt="">
+				</picture>
+				<picture>
+					<img src="/images/logo-linkedin.svg" alt="">
+				</picture>
+				<picture>
+					<img src="/images/logo-twitter.svg" alt="">
+				</picture>
+			</li>
+		</ul>
+	</div>
+	<a class="copyright" href="#">Mentions légales - CGV - CGU Copyright 2020</a>
+</footer>
 
 <%= require('./includes/footer.ejs')() %>

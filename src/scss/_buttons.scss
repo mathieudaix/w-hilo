@@ -15,9 +15,35 @@
 			margin-left: space(1);
 		}
 	}
+	&--full--dark {
+		background: $color-dark;
+		color: $color-white;
+	}
+	&--full--orange {
+		background: $color-orange;
+		color: $color-white;
+	}
+	&--full--violet {
+		background: $color-violet;
+		color: $color-white;
+	}
+	&--full--white {
+		background: $color-white;
+		border: 2px solid $color-dark;
+		color: $color-dark;
+	}
+	&--full--blanc {
+		background: $color-white;
+		color: $color-dark;
+	}
 	&--green {
 		border: 2px solid $color-green;
 		color: $color-green;
+	}
+	&--blue {
+		background: none;
+		border: 2px solid $color-blue;
+		color: $color-blue;
 	}
 	&--dark {
 		border: 2px solid $color-dark;
