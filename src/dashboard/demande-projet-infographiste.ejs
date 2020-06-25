@@ -1,7 +1,7 @@
 <%= require('../includes/header.ejs')({
     title: 'Demande de projet',
     page: 'page-projet',
-    description: 'Demande de projet'
+    description: 'Demande de projet avec infographiste'
 }) %>
 <section>
     <section class="pre-toggleables">
@@ -33,9 +33,22 @@
                     </table>
                     <div class="btn">Commande complète</div>
                 </section>
-                <section class="news__card disabled-card">
-                    <h2>Détails de l'infographiste</h2><i>Pas d'infographiste attribué.</i>
-                    <button>Assigner infographiste</button>
+                <section class="news__card info-wrapper">
+                    <div class="attrib">
+                        <div class="btn info-icon"></div>
+                        <table>
+                            <tr>
+                                <th>Nom</th>
+                                <th>Prénom</th>
+                            </tr>
+                            <tr>
+                                <td>Dupont</td>
+                                <td>Michel</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <a href="#">Voir le profil</a>
+                    <button class="btn assign">Modifier assignation</button>
                 </section>
             </section>
             <section class="news__card produit-infos">
