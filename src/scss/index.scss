@@ -187,4 +187,51 @@
 			display: none;
 		}
 	}
+
+	.purple {
+		background: #AA4FC4;
+		color: #fff;
+	}
+
+	&.modale {
+		overflow: hidden;
+
+		&::after {
+			content: '';
+			display: block;
+			height: 100vw;
+			width: 100vw;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background: #16005F;
+			filter: opacity(.5);
+			z-index: 100;
+		}
+
+		#modal {
+			position: absolute;
+			z-index: 101;
+			top: 38%;
+			left: calc(50% - 530px / 2);
+			width: 530px;
+			
+			h2 {margin: 0}
+
+			.space-between {margin-bottom: 20px;}
+
+			p:last-of-type {
+				margin-bottom: 2rem;
+			}
+
+			.green {
+				background: #17E8C3;
+				border: none;
+				color: #fff;
+			}
+			.noGreen {
+				border: 2px solid;
+			}
+		}
+	}
 }

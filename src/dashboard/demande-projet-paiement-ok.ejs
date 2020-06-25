@@ -1,6 +1,6 @@
 <%= require('../includes/header.ejs')({
     title: 'Demande de projet',
-    page: 'page-projet',
+    page: 'page-projet modale',
     description: 'Demande de projet avec infographiste'
 }) %>
 <section>
@@ -34,7 +34,10 @@
                             <td>OK</td>
                         </tr>
                     </table>
-                    <div class="btn">Commande complète</div>
+                    <div>
+                        <div class="btn purple">Annuler commande</div>
+                        <div class="btn">Transmettre commande</div>
+                    </div>
                 </section>
                 <section class="news__card info-wrapper">
                     <div class="attrib">
@@ -103,6 +106,19 @@
             </div>
         </section>
     </section>
+</section>
+<section id="modal" class="news__card">
+    <div class="space-between">
+        <h2>Valider le panier</h2>
+        <button>X</button>
+    </div>
+    <p>Le paiement sera débloqué lors de la transmission des documents.</p>
+    <p>Êtes-vous sûr de vouloir transmettre les documents ?</p>
+
+    <div>
+        <button class="btn noGreen">Ne pas envoyer</button>
+        <button class="btn green">Envoyer le rendu</button>
+    </div>
 </section>
 
 <%= require('../includes/footer.ejs')() %>
