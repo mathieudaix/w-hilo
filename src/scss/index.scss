@@ -19,6 +19,7 @@
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
+
 	> section {
 		height: inherit;
 		display: flex;
@@ -35,6 +36,7 @@
 			display: block;
 			margin-bottom: 10px;
 			font-size: 1.2rem;
+			font-weight: bold;
 		}
 
 		.toggleables {
@@ -46,6 +48,10 @@
 				text-decoration: underline;
 			}
 		}
+	}
+
+	.news__card {
+		width: auto;
 	}
 
 	.pre-toggleables {
@@ -72,12 +78,34 @@
 			> section {
 				height: 100%;
 			}
+
+			table tr {
+				grid-template-columns: repeat(4, 1fr);
+			}
+		}
+
+		.produit-infos table tr {
+			grid-template-columns: repeat(6, 1fr);
+		}
+
+		table tr {
+			display: grid;
+			gap: 20px;
 		}
 
 		.aside {
 			display: flex;
 			flex-wrap: wrap;
 			place-content: center;
+		}
+
+		.disabled-card {
+			background: #f3f3f3;
+			color: grey;
+		}
+
+		.btn {
+			border: 2px solid;
 		}
 	}
 }
