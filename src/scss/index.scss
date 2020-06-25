@@ -37,7 +37,7 @@
 
 		h2 {
 			display: block;
-			margin-bottom: 10px;
+			margin-bottom: 1rem;
 			font-size: 1.2rem;
 			font-weight: bold;
 		}
@@ -56,6 +56,8 @@
 
 	.news__card {
 		width: auto;
+		display: flex;
+        flex-direction: column;
 	}
 
 	.pre-toggleables {
@@ -86,15 +88,16 @@
 			table tr {
 				grid-template-columns: repeat(4, 1fr);
 			}
-        }
-        
-        .produit-infos table tr {
-            grid-template-columns: repeat(6, 1fr);
-        }
+		}
+
+		.produit-infos table tr {
+			grid-template-columns: repeat(6, 1fr);
+		}
 
 		table tr {
 			display: grid;
-			gap: 20px;
+            gap: 20px;
+            align-items: flex-end;
 		}
 
 		.aside {
@@ -110,6 +113,9 @@
 
 		.btn {
 			border: 2px solid;
+            width: fit-content;
+            align-self: flex-end;
+            margin-top: 10px
 		}
 	}
 }
