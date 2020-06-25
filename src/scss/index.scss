@@ -48,7 +48,17 @@
 
 			:first-child {
 				margin-right: 2rem;
-				text-decoration: underline;
+
+				&::after {
+					content: '';
+					display: block;
+					width: 100%;
+					height: 5px;
+					border-radius: 5px;
+					background: #25CDFF;
+					top: 7px;
+					position: relative;
+				}
 			}
 		}
 	}
@@ -116,24 +126,37 @@
 
 		.disabled-card {
 			background: #f3f3f3;
-			color: grey;
+
+			:not(a) {
+				color: grey;
+			}
+
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
 		}
 
 		.btn {
 			border: 2px solid;
 			width: fit-content;
 			align-self: flex-end;
-			margin-top: 30px
+			margin-top: 30px;
+			cursor: pointer;
 		}
 
 		.btn-wait {
 			border: none;
-			background: #FAE8FF;
+			background: #FFE4E0;
 		}
 
 		.btn-ok {
 			border: none;
 			background: #CCFAFF;
+		}
+
+		.btn-abort {
+			border: none;
+			background: #FAE8FF;
 		}
 
 		.info-icon {
@@ -216,10 +239,14 @@
 			top: 38%;
 			left: calc(50% - 530px / 2);
 			width: 530px;
-			
-			h2 {margin: 0}
 
-			.space-between {margin-bottom: 20px;}
+			h2 {
+				margin: 0
+			}
+
+			.space-between {
+				margin-bottom: 20px;
+			}
 
 			p:last-of-type {
 				margin-bottom: 2rem;
@@ -230,9 +257,14 @@
 				border: none;
 				color: #fff;
 			}
+
 			.noGreen {
 				border: 2px solid;
 			}
 		}
+	}
+
+	.conformity {
+		text-decoration: underline;
 	}
 }
