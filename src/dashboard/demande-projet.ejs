@@ -1,0 +1,36 @@
+<%= require('../includes/header.ejs')({
+    title: 'Demande de projet',
+    page: 'page-projet',
+    description: 'Demande de projet'
+}) %>
+<section>
+    <section class="pre-toggleables">
+        <h1>Nom du projet</h1>
+
+        <section class="toggleables">
+            <li class="active">Détail de la commande</li>
+            <li>Profil du client</li>
+        </section>
+    </section>
+    <section class="cards-container">
+        <section>
+            <section class="commande-infos">
+                <section class="news__card">
+                    <h2>Informations de commande</h2>
+                </section>
+                <section class="news__card">
+                    <h2>Détails de l'infographiste</h2><i>Pas d'inforgraphiste attribué.</i>
+                    <input type="button" disabled value="Assigner infographiste">
+                </section>
+            </section>
+            <section class="news__card produit-infos">
+                <h2>Informations sur le produit</h2>
+            </section>
+        </section>
+        <section class="news__card aside">
+            <i>Pas d'inforgraphiste attribué.</i>
+        </section>
+    </section>
+</section>
+
+<%= require('../includes/footer.ejs')() %>
