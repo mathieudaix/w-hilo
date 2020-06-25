@@ -21,42 +21,49 @@
 .page-projet {
 	height: 100vh;
 	display: flex;
-    flex-direction: column;
-    >section {
-        height: inherit;
-        display: flex;
-        flex-wrap: wrap;
-        place-content: center;
+	flex-direction: column;
 
-        h1 {
-            display: block;
-            margin-bottom: 4rem;
-            font-size: 2rem;
-        }
+	>section {
+		height: inherit;
+		display: flex;
+		flex-wrap: wrap;
+		place-content: center;
 
-        h2 {
-            display: block;
-            margin-bottom: 10px;
-            font-size: 1.2rem;
-        }
+		h1 {
+			display: block;
+			margin-bottom: 4rem;
+			font-size: 2rem;
+		}
 
-        .toggleables {
-            list-style-type: none;
-            display: flex;
-            font-weight: bold;
-            :first-child {
-                margin-right: 2rem;
-                text-decoration: underline;
-            }
-        }
-    }
+		h2 {
+			display: block;
+			margin-bottom: 10px;
+			font-size: 1.2rem;
+			font-weight: bold;
+		}
 
-    .pre-toggleables {
-        display: flex;
-        flex-direction: column;
-        width: 90%;
-        margin-bottom: 40px;
-    }
+		.toggleables {
+			list-style-type: none;
+			display: flex;
+			font-weight: bold;
+
+			:first-child {
+				margin-right: 2rem;
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.news__card {
+		width: auto;
+	}
+
+	.pre-toggleables {
+		display: flex;
+		flex-direction: column;
+		width: 90%;
+		margin-bottom: 40px;
+	}
 
 	.cards-container {
 		width: 90%;
@@ -75,12 +82,34 @@
 			>section {
 				height: 100%;
 			}
+
+			table tr {
+				grid-template-columns: repeat(4, 1fr);
+			}
+        }
+        
+        .produit-infos table tr {
+            grid-template-columns: repeat(6, 1fr);
+        }
+
+		table tr {
+			display: grid;
+			gap: 20px;
 		}
 
 		.aside {
 			display: flex;
 			flex-wrap: wrap;
 			place-content: center;
+		}
+
+		.disabled-card {
+			background: #F3F3F3;
+			color: grey;
+		}
+
+		.btn {
+			border: 2px solid;
 		}
 	}
 }
