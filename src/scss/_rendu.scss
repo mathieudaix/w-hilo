@@ -1,0 +1,70 @@
+.retour {
+	margin: space(4) 0;
+	@media screen and (min-width: $from-medium) {
+		max-width: 60%;
+	}
+	.fil {
+		a {
+			&:first-of-type {
+				color: $color-violet;
+			}
+		}
+	}
+	h1 {
+		font-family: $font-bold;
+		font-size: font(1.8);
+		margin: space(2) 0;
+	}
+	form {
+		background: $color-white;
+		box-shadow: $shadow;
+		border-radius: 0.5rem;
+		padding: space(3);
+		div {
+			@media screen and (min-width: $from-medium) {
+				display: flex;
+				align-items: center;
+			}
+			div {
+				&:not(:last-of-type) {
+					margin-bottom: space(1);
+					@media screen and (min-width: $from-medium) {
+						margin-bottom: 0;
+						margin-right: space(2);
+					}
+				}
+				label {
+					margin-left: space(1);
+				}
+			}
+		}
+		textarea {
+			resize: none;
+			width: 100%;
+			height: 14rem;
+			background: $color-light;
+			border-radius: 0.5rem;
+			padding: space(1.5);
+			box-shadow: $shadow;
+		}
+		button {
+			display: block;
+			margin-top: space(1);
+			@media screen and (min-width: $from-medium) {
+				margin-left: auto;
+			}
+		}
+	}
+	&__title {
+		font-size: font(1.2);
+		font-family: $font-bold;
+		margin-bottom: space(1.5);
+	}
+	&__info {
+		margin: space(1) 0 space(2);
+	}
+	label.retour__title {
+		display: block;
+		margin-top: space(2);
+	}
+}

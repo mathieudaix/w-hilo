@@ -1,0 +1,47 @@
+<%= require('../includes/header.ejs')({
+    title: 'Tableau de bord',
+    page: 'page-dashboard',
+    description: 'Tableau de bord.'
+}) %>
+
+<section class="retour">
+	<div class="container retour__container">
+
+		<div class="fil">
+			<a href="#">Une table de 10cm par 10cm /</a>
+			<a href="#">Le rendu n'est pas conforme</a>
+		</div>
+
+		<h1>Le rendu n'est pas conforme</h1>
+
+		<form>
+			<p class="retour__title">Le rendu n'etait pas conforme car :</p>
+			<div>
+				<div>
+					<input type="checkbox">
+					<label>Trop grand</label>
+				</div>
+				<div>
+					<input type="checkbox">
+					<label>Trop petit</label>
+				</div>
+				<div>
+					<input type="checkbox">
+					<label>Pas les bonnes textures</label>
+				</div>
+				<div>
+					<input type="checkbox">
+					<label>Autres</label>
+				</div>
+			</div>
+			<label class="retour__title">Ajouter des précisions</label>
+			<textarea name=""></textarea>
+			<p class="retour__info">Un email sera envoyé à l’infographiste avec le contenu de votre demande.</p>
+			<a class="btn btn--dark" type="text">Upload image</a>
+			<button class="btn btn--full--violet" type="submit">Envoyer à l'infographiste</button>
+		</form>
+
+	</div>
+</section>
+
+<%= require('../includes/footer.ejs')() %>

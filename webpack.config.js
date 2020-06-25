@@ -99,7 +99,7 @@ module.exports = {
 				useShortDoctype: true
 			}
 		}),
-		...['index', 'choix-infographiste', 'demande-projet'].map(el => {
+		...['index', 'choix-infographiste', 'demande-projet', 'index-document', 'rendu-non-conforme'].map(el => {
 			return new HtmlWebpackPlugin({
 				template: `./src/dashboard/${el}.ejs`,
 				filename: `dashboard/${el}.html`,

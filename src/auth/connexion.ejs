@@ -5,19 +5,19 @@
 }) %>
 
 <section>
-    <h1 class="titre">Connexion</h1>
-    <form action="#" method="POST">
-        <label for="username">Nom d'utilisateur</label>
-        <input type="text" name="username">
-        <label for="">Mot de passe</label>
-        <input type="text" name="password">
-    </form>
-    <a href="#" id="forgot-pass">mot de passe oublié ?</a>
-    <section class="buttons-container">
-        <button class="btn btn-connexion">Connexion</button>
-        <button class="btn btn-google">Google</button>
-    </section>
-    <a href="#" class="inscr">Pas encore de compte, inscrivez-vous</a>
+	<h1 class="titre">Connexion</h1>
+	<form action="#" method="POST">
+		<label for="username">Nom d'utilisateur</label>
+		<input type="text" name="username">
+		<label for="">Mot de passe</label>
+		<input type="password" name="password">
+	</form>
+	<a href="#" id="forgot-pass">mot de passe oublié ?</a>
+	<section class="buttons-container">
+		<button class="btn btn-connexion"><a href="../dashboard/index.html">Connexion</a></button>
+		<button class="btn btn-google">Google</button>
+	</section>
+	<a href="#" class="inscr">Pas encore de compte, inscrivez-vous</a>
 </section>
 
 <%= require('../includes/footer.ejs')() %>
