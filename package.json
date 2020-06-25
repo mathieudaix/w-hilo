@@ -14,9 +14,7 @@
 		"> 0%"
 	],
 	"dependencies": {
-		"carbon-components": "^10.14.0",
 		"gsap": "^3.3.0",
-		"ionicons": "^5.0.1",
 		"three": "^0.117.1"
 	},
 	"devDependencies": {
