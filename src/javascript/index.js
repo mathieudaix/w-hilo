@@ -45,7 +45,7 @@ import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 
-if (document.querySelector('.page-home')) {
+if (document.querySelector('.page-home') || document.querySelector('.page-projet-rendu')) {
 
 	const
 		colors = [
